@@ -5,16 +5,115 @@
 body {
     background: black;
     color: white;
+    margin: 0;
 }
 
-button {
-    height: 30px;
-    width: 30px;
-    border-radius: 15px;
+h1 {
+    color: white;
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-button {
+.wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+/* ********
+     HERO
+   ******** */
+
+.hero .hero-content {
+    height: 40vh;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+/* MANU */
+
+.hero .hero-content .navigation .navbar {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.hero .hero-content .navigation .navbar li {
+    padding: 5px 0;
+}
+
+.hero .hero-content .navigation .navbar li a:hover {
+    color: #c2921a;
+    transition: .3s;
+}
+
+.hero .hero-content .navigation ul {
+    list-style: none;
+}
+
+.hero .hero-content .navigation ul a {
+    text-decoration: none;
+    color: #e6ad1e;
+    transition: .3s;
+}
+
+/* IMAGE */
+
+.hero .hero-content .img {
+    flex-basis: 60%;
+    background: url(../media/Logo.png);
+    background-size: cover;
+    height: 240px;
+}
+
+/* SOCIAL */
+
+.hero .hero-content .social {
+    flex-basis: 10%;
+    height: 200px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* padding-top: 1px; */
+    /* padding-right: 40px; */
+    /* align-items: center; */
+    justify-content: flex-end;
+    align-content: baseline;
+}
+
+.hero .hero-content .social button {
+    height: 38px;
+    width: 38px;
+    border-radius: 19px;
+    margin: 4px;
+    text-align: center;
+    background: #e6ad1e;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero .hero-content .social button:hover {
+    background:  #8a6813;
+    transition: .3s;
+}
+
+.hero .hero-content .social button:hover a {
+    color: #e6ad1e;
+    transition: .3s;
+}
+
+.hero .hero-content .social button .icon {
+    font-size: 15px;
+}
+
+.hero .hero-content .social button a {
+    text-decoration: none;
+    color: #8a6813;
+    transition: .3s;
+}
